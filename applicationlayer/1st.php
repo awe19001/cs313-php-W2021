@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patient</title>
+	<title>Doctor and Patient Symptom Tracker</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
