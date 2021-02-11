@@ -6,7 +6,7 @@ $errors=array();
 
 $mysqli = new mysqli("localhost","root","","registration");
 
-if ($mysqli -> connect_errors) {
+if ($mysqli -> connect_error) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
