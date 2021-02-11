@@ -4,7 +4,7 @@
 session_start();
 $errors=array();
 
-$mysqli = new mysqli("heroku","root","","registration");
+$mysqli = new mysqli("localhost","root","","registration");
 
 if ($mysqli -> connect_errors) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
