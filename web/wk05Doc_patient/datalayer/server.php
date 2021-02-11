@@ -4,7 +4,7 @@
 session_start();
 $errors=array();
 
-$mysqli = new mysqli("localhost","root","","registration");
+$mysqli = new mysqli("localhost","root","HKGAwe213J","registration");
 
 if ($mysqli -> connect_error) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
@@ -16,21 +16,13 @@ if ($mysqli -> connect_error) {
 
 if (isset($_POST['Register'])) {
 
-	
-
-
-
 	$UserID 	= $mysqli -> real_escape_string($_POST['UserID']);
 	$Username 	= $mysqli -> real_escape_string($_POST['Name']);
 	$Address 	= $mysqli -> real_escape_string($_POST['Address']);
 	$ContactNumber	 = $mysqli -> real_escape_string($_POST['ContactNumber']);
 	$Email 		=  $mysqli -> real_escape_string($_POST['Email']);
 	$Password 	= $mysqli -> real_escape_string($_POST['password']);
-	$bloodtype 	= $mysqli -> real_escape_string($_POST['bloodtype']);
-    
-   
-
-
+	$bloodtype 	= $mysqli -> real_escape_string($_POST['bloodtype']); 
 
 
 	if (empty($UserID)) {
