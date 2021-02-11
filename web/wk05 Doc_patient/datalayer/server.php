@@ -6,7 +6,7 @@ $errors=array();
 
 $mysqli = new mysqli("heroku","root","","registration");
 
-if ($mysqli -> connect_errno) {
+if ($mysqli -> connect_errors) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
