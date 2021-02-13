@@ -34,4 +34,12 @@ a:active {
 ul {
 	list-style-type: none;
 }
+.container {
+	width: 50%;
+	margin:0px auto;
+	padding: 20px;
+	border: 2px solid #086ff5;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
 
+}
