@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
+<div class="container">
     <h2 class="text-center">New User Form</h2>
 
     <form method="POST" >
