@@ -26,8 +26,10 @@ $db = get_db();
        <br />
        <label>Password</label>
        <input type="password" name="password" class="form-control" />
-       <br />      
-        <button type="submit" name="Login" class="btn" value="Login"> Login</button>
+       <br />
+      
+       <input type="submit" name="login" class="btn btn-primary btn-block" value="Login"/>
+       <button type="submit" name="Login" class="btn btn-primary btn-block" value="Login"> Login</button>
        <p>
 		Not a member? <a href="newuser.php">Sign Up For New User </a>
 	</p>
