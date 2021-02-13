@@ -11,7 +11,7 @@
 
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
  
-   <h3> See list of events here! </h3>
+   <h3> Alerts here! </h3>
    <div>
    <div class="alert">
   <span class="closebtn">&times;</span>  
@@ -37,6 +37,18 @@
 -- Chaka Khan
 </div>
 
+<h3> See list of events here! </h3>
+<div>
+    <p>
+	 <a href="#">	New Year </a>
+     <a href="#">	Valentines </a>
+     <a href="#">	Labor Day </a>
+     <a href="#">	Independence Day </a>
+     <a href="#">	others.. </a>
+
+	</p>
+
+</div>
 
    </div>
 
