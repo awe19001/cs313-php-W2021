@@ -24,7 +24,7 @@ a:visited {
 }
 
 a:hover {
-  background-color: royalblue;
+  text-decoration: underline;
 }
 
 a:active {
