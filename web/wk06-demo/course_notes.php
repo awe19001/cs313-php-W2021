@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_GET['course_id']))
+if (!isset($_GET['course_id']))
 {
     die("Error, course id not specified...");
 }
