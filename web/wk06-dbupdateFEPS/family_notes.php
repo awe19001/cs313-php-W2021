@@ -42,11 +42,9 @@ foreach ($notenewfamily_rows as $note_row)
 ?>
 
 
-<form method="POST" action="family_notes">
-
-    <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Click here!</button>
-   
-</form>
+<p>
+		Not a member? <a href="familyform.php">Create</a>
+</p>
 
 
 
