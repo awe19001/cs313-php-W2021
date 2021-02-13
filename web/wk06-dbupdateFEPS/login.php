@@ -20,7 +20,7 @@ $db = get_db();
 <div class="container" style="width: 500px; height: 240px; border: 2px solid red; margin-top: 3px;">
     <h2 class="text-center">Welcome to Family Event Planning System</h2>
 
-    <form method="POST">
+    <form method="POST" action="landing.php">
        <label>Username</label>
        <input type="text" name="username" class="form-control" />
        <br />
@@ -28,7 +28,6 @@ $db = get_db();
        <input type="password" name="password" class="form-control" />
        <br />
       
-       <input type="submit" name="login" class="btn btn-primary btn-block" value="Login"/>
        <button type="submit" name="Login" class="btn btn-primary btn-block" value="Login"> Login</button>
        <p>
 		Not a member? <a href="newuser.php">Sign Up For New User </a>
