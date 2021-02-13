@@ -11,11 +11,10 @@ $db = get_db();
 
 $stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n JOIN landing l ON n.family_id = c.id WHERE c.id=:id');
 $stmt->bindValue(':id', $family_id, PDO::PARAM_INT);
-$stmt->bindValue(':name', $name, PDO::PARAM_STR);
 $stmt->execute();
-$note_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$notenewfamily_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$family_code = $notes_rows[0]['code'];
+$family_code = $notenewfamily_rows[0]['code'];
 ?>
 
 
@@ -36,7 +35,7 @@ $family_code = $notes_rows[0]['code'];
     <h2>Create New <?php echo $family_code; ?> </h2>
 
 <?php
-foreach ($note_rows as $note_row)
+foreach ($notenewfamily_rows as $note_row)
 {
     $content = $note_row['content'];
     echo "<p>$content</p>";
