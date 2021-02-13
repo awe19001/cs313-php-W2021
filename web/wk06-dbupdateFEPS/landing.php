@@ -1,5 +1,19 @@
 <?php
+require('dbconnect.php');
+$db = get_db();
 
+//SELECT id, code, name FROM landing;
+// From the reading wk05
+//$stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
+//$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+//$stmt->bindValue(':name', $name, PDO::PARAM_STR);
+//$stmt->execute();
+//$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$query = 'SELECT id, code, name FROM landing';
+$stmt = $db->prepare($query);
+$stmt->execute();
+$landings = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -18,14 +32,20 @@
     <h1> What do you want to do?</h1>
 
     <ul>
-        <li><p>Create New Families</p></li>
-        <li><p>Create New User</p></li>
-        <li><p>Create New Event</p></li>
-        <li><p>List of Events & Alert</p></li>
-    
-    
-    
-    </ul>
+
+<?php
+
+foreach ($landings as $landing)
+{
+    $id = $landing['id'];
+    $code = $landing['code'];
+    $name = $landing['name'];
+
+    echo "<li><p>$code - $name</p></li>";
+
+}
+?>
+ </ul>
     
 </body>
 </html>
