@@ -40,9 +40,6 @@ foreach ($note_rows as $note_row)
 
 ?>
 
-
-
-
 <p>abcessdffsdaf</p>
 <p>abcessdffsdaf</p>
 <p>abcessdffsdaf</p>
