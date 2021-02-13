@@ -9,9 +9,7 @@ $family_id = htmlspecialchars($_GET['family_id']);
 require('dbconnect.php');
 $db = get_db();
 
-$stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n 
-JOIN landing l ON n.family_id = l.id
-WHERE l.id = 1;');
+$stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n JOIN landing l ON n.family_id = l.id WHERE l.id = :id');
 $stmt->bindValue(':id', $family_id, PDO::PARAM_INT);
 $stmt->execute();
 $notenewfamily_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
