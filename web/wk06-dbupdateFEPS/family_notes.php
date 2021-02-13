@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_GET['family_id']))
+if (!isset($_GET['family_id']))
 {
     die("Error, family id not specified...");
 }
