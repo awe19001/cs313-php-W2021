@@ -42,7 +42,7 @@ foreach ($notenewfamily_rows as $note_row)
 ?>
 
 
-<form method="POST">
+<form method="POST" action="family_notes">
        <label>Create New Family</label>
        <input type="text" name="username" class="form-control" />
        <br />
@@ -50,7 +50,7 @@ foreach ($notenewfamily_rows as $note_row)
        <input type="password" name="password" class="form-control" />
        <br />
       
-       <button type="submit" name="Login" class="btn btn-primary btn-block" value="Login"> Login</button>
+       <button type="submit" name="Login" class="btn btn-primary btn-block" value="Login"> Submit</button>
    
 </form>
 
