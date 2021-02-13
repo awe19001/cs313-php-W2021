@@ -39,9 +39,22 @@ foreach ($notenewfamily_rows as $note_row)
     $content = $note_row['content'];
     echo "<p>$content</p>";
 }
-
-
 ?>
+
+
+<form method="POST">
+       <label>Create New Family</label>
+       <input type="text" name="username" class="form-control" />
+       <br />
+       <label>Family ID</label>
+       <input type="password" name="password" class="form-control" />
+       <br />
+      
+       <button type="submit" name="Login" class="btn btn-primary btn-block" value="Login"> Login</button>
+   
+</form>
+
+
 
 
 </div>
