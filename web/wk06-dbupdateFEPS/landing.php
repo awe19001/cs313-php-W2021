@@ -30,7 +30,8 @@ $landings = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Landing Page</title>
 </head>
 <body>
-    <h1> What do you want to do?</h1>
+    <div class="container">  
+     <h1> What do you want to do?</h1>
 
     <ul>
 
@@ -47,6 +48,7 @@ foreach ($landings as $landing)
 }
 ?>
  </ul>
-    
+ </div>
+ 
 </body>
 </html>
