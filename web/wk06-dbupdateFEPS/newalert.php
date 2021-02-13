@@ -40,11 +40,11 @@
 <h3> See list of events here! </h3>
 <div>
     <p>
-	 <a href="#">	New Year </a>
-     <a href="#">	Valentines </a>
-     <a href="#">	Labor Day </a>
-     <a href="#">	Independence Day </a>
-     <a href="#">	others.. </a>
+	 <a href="#">	New Year </a> </br>
+     <a href="#">	Valentines </a> </br>
+     <a href="#">	Labor Day </a> </br>
+     <a href="#">	Independence Day </a> </br>
+     <a href="#">	others.. </a></br>
 
 	</p>
 
