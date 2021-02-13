@@ -31,7 +31,6 @@ $family_code = $notenewfamily_rows[0]['code'];
 
 
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
-    <h1 class="text-center">Welcome to Family Event Planning System</h1>
     <h2>Create New <?php echo $family_code; ?> </h2>
 
 <?php
