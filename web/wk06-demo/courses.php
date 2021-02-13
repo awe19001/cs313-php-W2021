@@ -33,9 +33,13 @@ $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <ul>
 
+
+
 <?php
 foreach ($courses as $course)
 {
+
+    //var_dump($courses); help debug if it will not show in heroku
     $id = $course['id'];
     $code = $course['code'];
     $name = $course['name'];
