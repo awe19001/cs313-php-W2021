@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
+<div class="container" style="width: 500px; height: 1000px; border: 2px solid red; margin-top: 3px;">
  
    <h3> Alerts here! </h3>
    <div>
