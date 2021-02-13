@@ -35,20 +35,3 @@ ul {
 	list-style-type: none;
 }
 
-form{
-	width: 50%;
-	margin:0px auto;
-	padding: 20px;
-	border: 2px solid #086ff5;
-	background: white;
-	border-radius: 0px 0px 10px 10px;
-}
-
-.btn{
-	padding: 10px;
-	font-size: 15px;
-	color: white;
-	background:  #086ff5;
-	border:none;
-	border-radius: 5px;
-}
