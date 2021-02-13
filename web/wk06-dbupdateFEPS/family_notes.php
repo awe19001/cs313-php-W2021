@@ -9,12 +9,12 @@ $family_id = htmlspecialchars($_GET['family_id']);
 require('dbconnect.php');
 $db = get_db();
 
-$stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n JOIN landing l ON n.name = l.id WHERE l.id = :id');
-$stmt->bindValue(':id', $name, PDO::PARAM_INT);
+$stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n JOIN landing l ON n.family_id = l.id WHERE l.id = :id');
+$stmt->bindValue(':id', $family_id, PDO::PARAM_INT);
 $stmt->execute();
 $notenewfamily_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$name = $notenewfamily_rows[0]['code'];
+$family_code = $notenewfamily_rows[0]['code'];
 ?>
 
 
@@ -32,7 +32,7 @@ $name = $notenewfamily_rows[0]['code'];
 
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
     <h1 class="text-center">Welcome to Family Event Planning System</h1>
-    <h2>Create New <?php echo $name; ?> </h2>
+    <h2>Create New <?php echo $family_code; ?> </h2>
 
 <?php
 foreach ($notenewfamily_rows as $note_row)
