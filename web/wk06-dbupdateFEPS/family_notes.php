@@ -2,7 +2,7 @@
 
 if (isset($_GET['family_id']))
 {
-    die("Error, family id note specified...");
+    die("Error, family id not specified...");
 }
 $family_id = htmlspecialchars($_GET['family_id']);
 ?>
