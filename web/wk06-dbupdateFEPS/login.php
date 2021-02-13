@@ -24,7 +24,7 @@ $db = get_db();
     <h1 class="text-center">Welcome to Family Event Planning System</h1>
     <h2>Admin Login</h2>
 
-    <form method="POST" action="login.php">
+    <form method="POST" action="landing.php">
        <label>Username</label>
        <input type="text" name="username" class="form-control" />
        <br />
