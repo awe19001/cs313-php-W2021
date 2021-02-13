@@ -32,13 +32,14 @@ $landings = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <div class="container" style="width: 50%;
+    margin-top: 20px;
 	margin:0px auto;
 	padding: 20px;
 	border: 2px solid #086ff5;
 	background: white;
 	border-radius: 0px 0px 10px 10px;">
 
-     <h1> What do you want to do?</h1>
+     <h2> What do you want to do?</h2>
 
     <ul>
 
