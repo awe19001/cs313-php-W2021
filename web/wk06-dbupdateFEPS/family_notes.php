@@ -5,6 +5,17 @@ if (!isset($_GET['family_id']))
     die("Error, family id not specified...");
 }
 $family_id = htmlspecialchars($_GET['family_id']);
+
+require('dbconnect.php');
+$db = get_db();
+
+$stmt = $db->prepare('SELECT l.code, l.name, n.content FROM notenewfamily n JOIN landing l ON n.family_id = c.id WHERE c.id=:id');
+$stmt->bindValue(':id', $family_id, PDO::PARAM_INT);
+$stmt->bindValue(':name', $name, PDO::PARAM_STR);
+$stmt->execute();
+$note_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$family_code = $notes_rows[0]['code'];
 ?>
 
 
@@ -22,12 +33,18 @@ $family_id = htmlspecialchars($_GET['family_id']);
 
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
     <h1 class="text-center">Welcome to Family Event Planning System</h1>
-    <h2>Create New Family_id <?php echo $family_id ?> </h2>
+    <h2>Create New <?php echo $family_code; ?> </h2>
 
-    <p>abcdefggiw k</p>
-    <p>abcdefggiw k</p>
-    <p>abcdefggiw k</p>
-    <p>abcdefggiw k</p>
+<?php
+foreach ($note_rows as $note_row)
+{
+    $content = $note_row['content'];
+    echo "<p>$content</p>";
+}
+
+
+?>
+
 
 </div>
 <br />
