@@ -14,7 +14,7 @@ $stmt->bindValue(':id', $name, PDO::PARAM_INT);
 $stmt->execute();
 $notenewfamily_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$family_code = $notenewfamily_rows[0]['code'];
+$name = $notenewfamily_rows[0]['code'];
 ?>
 
 
