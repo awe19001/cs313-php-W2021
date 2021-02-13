@@ -22,9 +22,10 @@ $db = get_db();
 
 <div class="container">
     <h1 class="text-center">Welcome to Family Event Planning System</h1>
-    <h2>Admin Login</h2>
+  
 
     <form method="POST" action="landing.php">
+    <h2>Admin Login</h2>
        <label>Username</label>
        <input type="text" name="username" class="form-control" />
        <br />
