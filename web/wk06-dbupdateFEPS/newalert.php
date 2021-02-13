@@ -10,25 +10,10 @@
 <body>
 
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
-    <h2 class="text-center">List of Events and alert</h2>
-  
-    <div class="alert">
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    This is an alert box.
-    </div>
-
-
+ 
    <h3> See list of events here! </h3>
    <div>
-
-
-   </div>
-
-</div>
-<br />
-
-
-<div class="alert">
+   <div class="alert">
   <span class="closebtn">&times;</span>  
   <strong>Danger!</strong> "The world is a dangerous place, not because of those who do evil, but because of those who look on and do nothing."
 -- Einstein Quotes
@@ -53,6 +38,10 @@
 </div>
 
 
+   </div>
+
+</div>
+<br />
 
 
 
