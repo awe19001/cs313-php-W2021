@@ -4,15 +4,14 @@ if (!isset($_GET['course_id']))
 {
     die("Error, course id not specified...");
 }
-$course_id =htmlspecialchars( $_GET['course_id']);
+$course_id = htmlspecialchars($_GET['course_id']);
 
 require('dbConnect.php');
 $db = get_db();
 
 // From the reading wk05
-$stmt = $db->prepare('SELECT c.code, c.name, n.content FROM note n JOIN course c ON n.course_id = c.id WHERE c.id =:id;');
+$stmt = $db->prepare('SELECT c.code, c.name, n.content FROM note n JOIN course c ON n.course_id = c.id WHERE c.id =:id');
 $stmt->bindValue(':id', $course_id, PDO::PARAM_INT);
-$stmt->bindValue(':name', $name, PDO::PARAM_STR);
 $stmt->execute();
 $note_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
