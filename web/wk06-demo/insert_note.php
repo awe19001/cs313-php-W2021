@@ -6,10 +6,8 @@ $content = htmlspecialchars($_POST['note_content']);
 require('dbConnect.php');
 $db = get_db();
 
-// From the reading wk05
-//query statement
 $stmt = $db->prepare('INSERT INTO note(course_id, content) VALUES (:course_id, :content);');
-$stmt->bindValue(':id', $course_id, PDO::PARAM_INT);
+$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
 $stmt->bindValue(':content', $content, PDO::PARAM_STR);
 $stmt->execute();
 
