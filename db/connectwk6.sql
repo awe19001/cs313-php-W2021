@@ -21,4 +21,6 @@ INSERT INTO notenewfamily(family_id, content) VALUES (4, 'See the events you hav
 
 SELECT * FROM notenewfamily n JOIN landing l ON n.family_id = l.id;
 
-
+SELECT l.code, l.name, n.content FROM notenewfamily n 
+JOIN landing l ON n.family_id = l.id
+WHERE l.id = 1;
