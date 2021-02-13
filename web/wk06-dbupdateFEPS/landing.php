@@ -31,16 +31,16 @@ $landings = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Landing Page</title>
 </head>
 <body>
-<div class="container" style="width: 550px; height: 500px; border: 2px solid red; margin-top: 3px;margin-left: 100px;">
-
-     <h1> What do you want to do?</h1>
-
-    <ul style="	width: 50%;
+<div class="container" style="width: 50%;
 	margin:0px auto;
 	padding: 20px;
 	border: 2px solid #086ff5;
 	background: white;
 	border-radius: 0px 0px 10px 10px;">
+
+     <h1> What do you want to do?</h1>
+
+    <ul>
 
 <?php
 
