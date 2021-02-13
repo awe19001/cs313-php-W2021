@@ -20,7 +20,7 @@ $db = get_db();
 <div class="container" style="width: 500px; height: 240px; border: 2px solid red; margin-top: 3px;">
     <h2 class="text-center">Welcome to Family Event Planning System</h2>
 
-    <form method="POST" action="landing.php">
+    <form method="POST" action="login.php">
        <label>Username</label>
        <input type="text" name="username" class="form-control" />
        <br />
