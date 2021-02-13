@@ -34,7 +34,7 @@ $family_code = $notenewfamily_rows[0]['code'];
     <h2>Create New <?php echo $family_code; ?> </h2>
 
 <?php
-
+foreach ($notenewfamily_rows as $note_row)
 {
     $content = $note_row['content'];
     echo "<p>$content</p>";
@@ -43,14 +43,8 @@ $family_code = $notenewfamily_rows[0]['code'];
 
 
 <form method="POST" action="family_notes">
-       <label>Create New Family</label>
-       <input type="text" name="username" class="form-control" />
-       <br />
-       <label>Family ID</label>
-       <input type="password" name="password" class="form-control" />
-       <br />
-      
-       <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Submit</button>
+
+    <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Submit</button>
    
 </form>
 
