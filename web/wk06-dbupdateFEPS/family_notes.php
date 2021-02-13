@@ -43,7 +43,7 @@ foreach ($notenewfamily_rows as $note_row)
 
 
 <p>
-		Not a member? <a href="familyform.php">Create</a>
+	<a href="form.php">Create Here!</a>
 </p>
 
 
