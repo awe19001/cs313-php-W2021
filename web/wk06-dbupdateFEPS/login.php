@@ -2,6 +2,8 @@
 require('dbconnect.php');
 $db = get_db();
 
+
+
 ?>
 
 
@@ -19,9 +21,10 @@ $db = get_db();
 <body>
 
 <div class="container">
-    <h2 class="text-center">Welcome to Family Event Planning System</h2>
+    <h1 class="text-center">Welcome to Family Event Planning System</h1>
+    <h2>Admin Login</h2>
 
-    <form method="POST" action="landing.php">
+    <form method="POST" action="login.php">
        <label>Username</label>
        <input type="text" name="username" class="form-control" />
        <br />
