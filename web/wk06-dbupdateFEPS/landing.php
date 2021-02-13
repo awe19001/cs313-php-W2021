@@ -41,7 +41,7 @@ foreach ($landings as $landing)
     $code = $landing['code'];
     $name = $landing['name'];
 
-    echo "<li><p>$code - $name</p></li>";
+    echo "<li><p><a href='family_notes.php?family_id=$id'>$code - $name</a></p></li>";
 
 }
 ?>
