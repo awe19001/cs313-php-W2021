@@ -11,6 +11,7 @@
 <body>
 <div class="container" style="width: 500px; height: 500px; border: 2px solid red; margin-top: 3px;">
  
+<h2 class="text-center"> Choose and click to create and view </h2>
 <p>
 	<a href="newfamily.php">Create New Family</a>
 </p>
