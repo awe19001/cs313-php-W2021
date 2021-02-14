@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="alertstyle.css">
+    <link rel="stylesheet" type="text/css" href="newalert.css">
     <title>New Alert</title>
 </head>
 <body>
 
 <div class="container">
- 
+ <div>
    <h3> Alerts here! </h3>
    <div>
    <div class="alert">
@@ -40,39 +40,37 @@
 
 
 <div> 
-<form> 
-  <p>First name: <input type="text" id="fname" name ="firstname"></p>
-  <p>Last name: <input type="text" id="lname" name="lastname"></p>
-  <p><input type="button" value="Submit" id="namebutton"></p>
-  <script>
-    // Just get a reference to the element
-    var fname = document.getElementById("fname");
-    var lname = document.getElementById("lname");
-    document.getElementById("namebutton").addEventListener("click", function () { 
-      // Then, use the properties of the (already gotten) elment as you need them:
-      alert('Hello ' + fname.value + " " + lname.value);
-    })
-  </script>
-</form>
+  <form> 
+    <p>First name: <input type="text" id="fname" name ="firstname"></p>
+    <p>Last name: <input type="text" id="lname" name="lastname"></p>
+    <p><input type="button" value="Submit" id="namebutton"></p>
+    <script>
+      // Just get a reference to the element
+      var fname = document.getElementById("fname");
+      var lname = document.getElementById("lname");
+      document.getElementById("namebutton").addEventListener("click", function () { 
+        // Then, use the properties of the (already gotten) elment as you need them:
+        alert('Hello ' + fname.value + " " + lname.value);
+      })
+    </script>
+  </form>
+
+
+      <h3> See list of family events here! </h3>
+      <div>
+          <p>
+        <a href="#">	New Year </a> </br>
+          <a href="#">	Valentines </a> </br>
+          <a href="#">	Labor Day </a> </br>
+          <a href="#">	Independence Day </a> </br>
+          <a href="#">	others.. </a></br>
+
+        </p>
+        <br />
+      </div>
+</div>
 </div>
 
-<h3> See list of family events here! </h3>
-<div>
-    <p>
-	 <a href="#">	New Year </a> </br>
-     <a href="#">	Valentines </a> </br>
-     <a href="#">	Labor Day </a> </br>
-     <a href="#">	Independence Day </a> </br>
-     <a href="#">	others.. </a></br>
-
-	</p>
-
-</div>
-
-   </div>
-
-</div>
-<br />
 
 
 
