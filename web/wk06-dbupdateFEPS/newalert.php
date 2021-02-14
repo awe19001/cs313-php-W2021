@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="alertstyle.css">
     <title>New Alert</title>
 </head>
 <body>
 
-<div class="container" style="width: 500px; height: 1000px; border: 2px solid red; margin-top: 3px;">
+<div class="container">
  
    <h3> Alerts here! </h3>
    <div>
