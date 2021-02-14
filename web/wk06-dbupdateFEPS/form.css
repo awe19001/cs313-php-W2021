@@ -39,7 +39,8 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
+  background-color: rgb(243, 17, 130);
+  color: white;
 }
 
 a:active {
