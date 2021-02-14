@@ -26,7 +26,7 @@
         <label for="role3"> I'm an observant</label><br>
        <label>User Id</label>
        <input type="password" name="userid" class="form-control" />  
-      
+       <br />
        <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Submit</button>
 
     </form>
