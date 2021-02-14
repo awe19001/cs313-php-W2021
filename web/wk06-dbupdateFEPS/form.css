@@ -6,6 +6,7 @@
 body{
 	background: #e978b1;
     font-size: 120%;
+    padding: 10px;
 
 }
 
@@ -19,3 +20,26 @@ body{
 	border-radius: 0px 0px 10px 10px;
 
 }
+a {
+	color: rgb(179, 5, 92);
+}
+a:link {
+	text-decoration: none;
+	padding: 14px 25px;
+	text-align: center;
+  }
+a:visited {
+  color:rgb(9, 13, 247);	
+  text-decoration: none;
+  padding: 14px 25px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
