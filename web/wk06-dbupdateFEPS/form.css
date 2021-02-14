@@ -20,9 +20,11 @@ body{
 h2 {
     padding: 20px;
 }
+p {
+    padding: 10px;
+}
 a {
 	color: rgb(179, 5, 92);
-    padding: 15px;
 }
 a:link {
 	text-decoration: none;
