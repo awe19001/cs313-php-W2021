@@ -24,12 +24,11 @@
         <label for="role2"> I'm a follower</label><br>
         <input type="checkbox" id="role3" name="role3" value="Observant">
         <label for="role3"> I'm an observant</label><br>
-
        <label>User Id</label>
-       <input type="password" name="userid" class="form-control" />    
+       <input type="password" name="userid" class="form-control" />  
       
        <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Submit</button>
-       <br />
+
     </form>
 </div>
 <br />
