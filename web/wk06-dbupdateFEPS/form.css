@@ -6,8 +6,6 @@
 body{
 	background: #e978b1;
     font-size: 120%;
-    padding: 10px;
-
 }
 
 .container {
@@ -22,6 +20,7 @@ body{
 }
 a {
 	color: rgb(179, 5, 92);
+    padding: 10px;
 }
 a:link {
 	text-decoration: none;
