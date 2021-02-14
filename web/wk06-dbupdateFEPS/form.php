@@ -12,7 +12,7 @@
 <body>
 <div class="container">
  
-<h2 class="text-center"> Choose, Click Create !</h2>
+<h2 class="text-center"> Choose, Click, Create !</h2>
 <p>
 	<a href="newfamily.php">Create New Family</a>
 </p>
