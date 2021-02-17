@@ -1,5 +1,43 @@
 
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $passwordErr = $roleErr = "";
+$name = $email = $password = $role = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+      $nameErr = "Name is required";
+    } else {
+      $name = test_input($_POST["name"]);
+    }
+    
+    if (empty($_POST["email"])) {
+      $emailErr = "Email is required";
+    } else {
+      $email = test_input($_POST["email"]);
+    }
+      
+    if (empty($_POST["password"])) {
+      $passwordErr = "";
+    } else {
+      $password = test_input($_POST["password"]);
+    }
+   
+    if (empty($_POST["role"])) {
+      $roleErr = "Role is required";
+    } else {
+      $role = test_input($_POST["role"]);
+    }
+  }
+
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+
+?>
 
 
 
@@ -18,29 +56,26 @@
 <div class="container">
     <h2 class="text-center">Register New User Here!</h2>
 
-    <form method="POST"  action = "welcomeuser.php">
-       <label>Name</label>
-       <input type="name" name="name" class="form-control" />
-       <br />
-       <label>Email</label>
-       <input type="email" name="email" class="form-control" />
-       <br />
-       <label>Password</label>
-       <input type="password" name="password" class="form-control" />  
-       <br />
+    <p><span class="error">* required field</span></p>
 
-       <input type="checkbox" id="role1" name="role" value="Creator">
-        <label for="role1"> I'm a creator</label><br>
-        <input type="checkbox" id="role2" name="role" value="Follower">
-        <label for="role2"> I'm a follower</label><br>
-        <input type="checkbox" id="role3" name="role" value="Observant">
-        <label for="role3"> I'm an observant</label>
-        <br />
-     
-       <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
-       <br />
+   Name: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="email" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Password: <input type="password" name="password">
+  <span class="error"><?php echo $passwordErr;?></span>
+  <br><br>
+  Role:
+  <input type="radio" name="role" value="female">Creator
+  <input type="radio" name="role" value="male">Follower
+  <input type="radio" name="role" value="other">Observant
+  <span class="error">* <?php echo $roleErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
 
-    </form>
 </div>
 <br />
 </body>
