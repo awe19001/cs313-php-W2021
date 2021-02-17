@@ -64,8 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container">
     <h2 class="text-center">Register New User Here!</h2>
     <p><span class="error">* required field</span></p>
-
-    <form method="POST"  action="welcomeuser.php">  
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
    
    Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -74,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   Password: <input type="password" name="password">
-  <span class="error"><?php echo $passwordErr;?></span>
+  <span class="error">*<?php echo $passwordErr;?></span>
   <br><br>
   Role:
   <input type="radio" name="role"  <?php if (isset($role) && $role=="Creator") echo "checked";?> value="Creator">Creator
@@ -85,6 +84,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
        <br />
 </form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $password;
+echo "<br>";
+echo $role;
+echo "<br>";
+
+?>
 
 </div>
 
