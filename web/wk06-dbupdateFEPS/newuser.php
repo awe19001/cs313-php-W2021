@@ -81,22 +81,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <input type="radio" name="role"  <?php if (isset($role) && $role=="Observant") echo "checked";?> value="Observant">Observant
   <span class="error">* <?php echo $roleErr;?></span>
   <br><br>
-  <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
+
+  <a href="welcomeuser.php"><button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button></a>
        <br />
 </form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $password;
-echo "<br>";
-echo $role;
-echo "<br>";
-
-?>
 
 </div>
 
