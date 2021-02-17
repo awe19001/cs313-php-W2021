@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </form>
 
 
-  <form action="welcomeuser.ph">
+  <form action="welcomeuser.php">
     <input type="submit" value="Register Now" />
 </form>
 
