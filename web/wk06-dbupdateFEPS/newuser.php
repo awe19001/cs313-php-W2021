@@ -58,6 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <p><span class="error">* required field</span></p>
 
+    <form method="POST"  action = "welcomeuser.php">
+   
    Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
@@ -73,10 +75,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <input type="radio" name="role" value="other">Observant
   <span class="error">* <?php echo $roleErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
+       <br />
 </form>
 
 </div>
-<br />
+
 </body>
 </html>
