@@ -1,3 +1,19 @@
+<?php
+include 'dbconnect.php';
+if(isset($_POST['submit']))
+{
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    if($login->register($name,$email,$password)){
+        header("Location:")
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +27,17 @@
 <body>
 
 <div class="container">
-    <h2 class="text-center">New User Form</h2>
+    <h2 class="text-center">Regiter New User Here!</h2>
 
-    <form method="POST" >
-       <label>Username</label>
-       <input type="text" name="username" class="form-control" />
+    <form method="POST"  action = "">
+       <label>Name</label>
+       <input type="name" name="name" class="form-control" />
+       <br />
+       <label>Email</label>
+       <input type="email" name="email" class="form-control" />
+       <br />
+       <label>Password</label>
+       <input type="password" name="password" class="form-control" />  
        <br />
 
        <input type="checkbox" id="role1" name="role1" value="Creation">
@@ -24,10 +46,8 @@
         <label for="role2"> I'm a follower</label><br>
         <input type="checkbox" id="role3" name="role3" value="Observant">
         <label for="role3"> I'm an observant</label><br>
-       <label>User Id</label>
-       <input type="password" name="userid" class="form-control" />  
-       <br />
-       <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Submit</button>
+     
+       <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
 
     </form>
 </div>

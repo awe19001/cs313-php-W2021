@@ -24,3 +24,5 @@ SELECT * FROM notenewfamily n JOIN landing l ON n.family_id = l.id;
 SELECT l.code, l.name, n.content FROM notenewfamily n 
 JOIN landing l ON n.family_id = l.id
 WHERE l.id = 1;
+
+
