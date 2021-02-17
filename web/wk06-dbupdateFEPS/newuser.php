@@ -9,12 +9,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "Name is required";
     } else {
       $name = test_input($_POST["name"]);
-    }
+  // check if name only contains letters and whitespace
+  if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+    $nameErr = "Only letters and white space allowed";
+  }
+}
     
     if (empty($_POST["email"])) {
       $emailErr = "Email is required";
     } else {
       $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+      }
     }
       
     if (empty($_POST["password"])) {
@@ -55,10 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="container">
     <h2 class="text-center">Register New User Here!</h2>
-
     <p><span class="error">* required field</span></p>
 
-    <form method="POST"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+    <form method="POST"  action="welcomeuser.php">  
    
    Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -70,9 +77,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <span class="error"><?php echo $passwordErr;?></span>
   <br><br>
   Role:
-  <input type="radio" name="role" value="Creator">Creator
-  <input type="radio" name="role" value="Follower">Follower
-  <input type="radio" name="role" value="Observant">Observant
+  <input type="radio" name="role"  <?php if (isset($role) && $role=="Creator") echo "checked";?> value="Creator">Creator
+  <input type="radio" name="role"  <?php if (isset($role) && $role=="Follower") echo "checked";?> value="Follower">Follower
+  <input type="radio" name="role"  <?php if (isset($role) && $role=="Observant") echo "checked";?> value="Observant">Observant
   <span class="error">* <?php echo $roleErr;?></span>
   <br><br>
   <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
@@ -82,4 +89,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 </body>
-</html>
+</html> 
+
