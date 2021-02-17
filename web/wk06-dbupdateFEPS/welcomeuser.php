@@ -18,7 +18,7 @@ Your email address is: <?php echo $_POST["email"]; ?><br>
 Your password is: <?php echo $_POST["password"]; ?><br>
 You are a: <?php echo $_POST["role"]; ?><br>
 
-<button class = "goback" onclick="goBack()">Go Back</button>
+<button class="btn btn-primary btn-block"  onclick="goBack()">Go Back</button>
 
 
 
