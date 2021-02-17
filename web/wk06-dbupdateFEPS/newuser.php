@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-    <h2 class="text-center">Regiter New User Here!</h2>
+    <h2 class="text-center">Register New User Here!</h2>
 
     <form method="POST"  action = "welcomeuser.php">
        <label>Name</label>
