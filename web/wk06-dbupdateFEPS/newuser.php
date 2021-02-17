@@ -29,12 +29,12 @@
        <input type="password" name="password" class="form-control" />  
        <br />
 
-       <input type="checkbox" id="role1" name="role1" value="Creation">
+       <input type="checkbox" id="role1" name="role" value="Creation">
         <label for="role1"> I'm a creator</label><br>
-        <input type="checkbox" id="role2" name="role2" value="Follower">
+        <input type="checkbox" id="role2" name="role" value="Follower">
         <label for="role2"> I'm a follower</label><br>
-        <input type="checkbox" id="role3" name="role3" value="Observant">
-        <label for="role3"> I'm an observant</label><br>
+        <input type="checkbox" id="role3" name="role" value="Observant">
+        <label for="role3"> I'm an observant</label>
      
        <button type="submit" name="submit" class="btn btn-primary btn-block" value="submit"> Register Now</button>
 
