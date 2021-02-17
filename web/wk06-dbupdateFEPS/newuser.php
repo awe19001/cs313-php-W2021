@@ -23,7 +23,7 @@ echo "I love $txt!";
 <div class="container">
     <h2 class="text-center">Regiter New User Here!</h2>
 
-    <form method="POST"  action = "">
+    <form method="POST"  action = "welcomeuser.php">
        <label>Name</label>
        <input type="name" name="name" class="form-control" />
        <br />
