@@ -8,4 +8,9 @@ CREATE TABLE usertracker
     gender VARCHAR(25) NOT NULL
 );
 
+SELECT * FROM usertracker;
 
+
+
+INSERT INTO note_user (username, password) VALUES ('john', 'pass');
+INSERT INTO usertracker (id, firstname, lastname, email, userpassword, gender) VALUES ('')
