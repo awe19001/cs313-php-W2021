@@ -40,7 +40,7 @@ $result = $db->prepare($sql);
             <?php      
             if ($result->num_rows = 0) {
                 //output data of each row
-                while ($row = $result()) {
+                while ($row = $result->fetch_assoc()) {
             ?>
                     <tr>
                     <td><?php echo $row['id']; ?></td>
