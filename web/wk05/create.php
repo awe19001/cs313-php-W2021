@@ -2,6 +2,7 @@
 include "dbconnect.php";
 $db = get_db();
 
+/*
 if (isset($_POST['submit'])){
     //get variables from the form
     $first_name = $_POST['firstname'];
@@ -10,21 +11,18 @@ if (isset($_POST['submit'])){
     $password = $_POST['password'];
     $gender = $_POST['gender'];
 
-
    $query= "INSERT INTO usertracker (id, firstname, lastname, email, userpassword, gender) VALUES ('$first_name', '$last_name', ' $email', ' $password', '$gender')";
-
     //execute the query
-
-    $result = $db->query($query);
-
+    $stmt = $db->query($query);
     if
-        ($result ==TRUE) {
+        ($stmt ==TRUE) {
             echo "New record created successfully.";
         }else {
             echo "Error:"; 
         }
         die();
 }
+*/
 
 ?>
 
