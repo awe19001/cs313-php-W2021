@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container">
     <h2 class="text-center">Register New User Here!</h2>
     <p><span class="error">* required field</span></p>
-    <form method="post" action="welcomeuser.php">  
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
    
    Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
