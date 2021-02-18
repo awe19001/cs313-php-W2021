@@ -11,19 +11,19 @@ if (isset($_POST['submit'])){
     $gender = $_POST['gender'];
 
 
-   $sql= "INSERT INTO usertracker (id, firstname, lastname, email, userpassword, gender) VALUES ('$first_name', '$last_name', ' $email', ' $password', '$gender')";
+   $query= "INSERT INTO usertracker (id, firstname, lastname, email, userpassword, gender) VALUES ('$first_name', '$last_name', ' $email', ' $password', '$gender')";
 
     //execute the query
 
-    $result = $db->query($sql);
+    $result = $db->query($query);
 
     if
- ($result ==TRUE) {
-     echo "New record created successfully.";
- }else {
-     echo "Error:". $sql . "<br>". $db->error; 
- }
-die();
+        ($result ==TRUE) {
+            echo "New record created successfully.";
+        }else {
+            echo "Error:"; 
+        }
+        die();
 }
 
 ?>
