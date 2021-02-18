@@ -12,18 +12,15 @@ if (isset($_POST['submit'])){
 
    $query= "INSERT INTO usertracker (id, firstname, lastname, email, userpassword, gender) VALUES ('$first_name', '$last_name', ' $email', ' $password', '$gender')";
     //execute the query
-
     $stmt = $db->prepare($query);
-    $stmt->execute();
-  /*  
+    $stmt->execute();   
     if
         ($stmt ==TRUE) {
             echo "New record created successfully.";
         }else {
             echo "Error:"; 
         }
-        die();
-        */
+        die();        
 }
 
 
